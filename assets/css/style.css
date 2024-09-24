@@ -17,6 +17,13 @@ body {
     font-family: var(--font-base), sans-serif;
 }
 
+.profile-img {
+    width: 150px; /* Adjust the width to your desired size */
+    height: 150px; /* Maintain aspect ratio */
+    border: none; /* Remove borders */
+    object-fit: cover; /* Ensure the image fits well in the circle */
+}
+
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
     font-weight: 700;

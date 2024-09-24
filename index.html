@@ -5,11 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sulaim saed</title>
+    <title>Sulaim Saed - Software Engineer & Consultant</title>
+    <meta name="description" content="Sulaim Saed is a Software Engineer specializing in backend development and UI/UX consulting.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- General Meta Tags -->
+    <meta name="author" content="Sulaim Saed">
+    <meta name="keywords" content="Sulaim Saed, Software Engineer, Backend Development, UI/UX, Consultant, Blogs, Technology">
+
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Sulaim Saed - Software Engineer & Consultant">
+    <meta property="og:description" content="Sulaim Saed is a Software Engineer specializing in backend development and UI/UX consulting. Stay tuned for insightful blogs!">
+    <meta property="og:image" content="URL_to_your_image.jpg">
+    <meta property="og:url" content="https://sulaim.uno">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/pngtree-english-letter-s-english-icon-image_1157075.jpg">
+    <script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.2/dist/core.js"></script>
+
+    
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -19,9 +38,11 @@
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Sulaim Saed</span>
-                <img src="./assets/images/sulaim.jpeg"
-                    class="d-none d-lg-block rounded-circle" alt="">
+                <!-- Profile Image -->
+                <img src="./assets/images/sulaim.jpeg" class="profile-img d-none d-lg-block rounded-circle" alt="Sulaim Saed">
             </a>
+            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,6 +58,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blogs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -55,29 +79,59 @@
     <!-- CONTENT WRAPPER -->
     <div id="content-wrapper">
 
-<!-- HOME -->
-<section id="home" class="full-height px-lg-5">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10">
-                <h1 class="display-4 fw-bold" data-aos="fade-up"> 
-                    <span class="text-brand"></span> SOFTWARE ENGINEER
-                </h1>
-                <p class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    Hi! I'm an aspiring developer from Kannur, Kerala, with a strong focus on Python and Node.js. 
-                    I am passionate about crafting efficient and innovative solutions and excel at switching between different programming languages and frameworks to meet project requirements.
-                </p>
-                <div data-aos="fade-up" data-aos-delay="600">
-                    <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
-                    <a href="#" class="link-custom">Call: (+91) 8590046766</a><br>
+        <!-- HOME -->
+        <!-- HOME -->
+        <section id="home" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1 class="display-4 fw-bold" data-aos="fade-up">
+                            Hi, I'm Sulaim
+                        </h1>
+                        <h2 class="lead mt-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            I am a <span id="typewriter" class="text-brand"></span>
+                        </h2>
+                        <p data-aos="fade-up" data-aos-delay="300">
+                            I'm an aspiring developer from Kannur, Kerala, with a strong focus on Python and Node.js.
+                            I am passionate about crafting efficient and innovative solutions, and I excel at switching
+                            between
+                            different programming languages and frameworks to meet project requirements.
+                        </p>
+                        <div data-aos="fade-up" data-aos-delay="600">
+                            <a href="#work" class="btn btn-brand me-3">Explore My Work</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-</section>
-<!-- //HOME -->
+        <!-- Add the Typewriter.js CDN -->
+
+
+        <script>
+            const app = document.getElementById('typewriter');
+
+            const typewriter = new Typewriter(app, {
+                loop: true,
+                delay: 75,
+            });
+
+            typewriter
+                .typeString('Software Engineer')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('Backend Developer')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('UI/UX Consultant')
+                .pauseFor(2500)
+                .deleteAll()
+                .typeString('Business Consultant')
+                .pauseFor(2500)
+                .start();
+        </script>
+
+        <!-- //HOME -->
 
 
         <!-- SERVICES -->
@@ -98,9 +152,9 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-feather"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Web Designs</h5>
-                            <p>I craft high-performing and delightful experiences tailored and conversion-focused Web
-                                designs</p>
+                            <h5 class="mt-4 mb-2">UI/UX Design</h5>
+                            <p>Creating user-centered designs that enhance user experience, focusing on usability and
+                                aesthetics to ensure an engaging interface.</p>
                             <a href="#" class="link-custom"></a>
                         </div>
                     </div>
@@ -110,8 +164,9 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-pencil-ruler"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Web Development</h5>
-                            <p>Creating Powerful Servers By writing understandable Codes with standerds . </p>
+                            <h5 class="mt-4 mb-2">Backend Development</h5>
+                            <p>Developing robust server-side applications with scalable architectures, utilizing Python
+                                and Node.js to handle data processing and business logic.</p>
                             <a href="#" class="link-custom"></a>
                         </div>
                     </div>
@@ -121,9 +176,46 @@
                             <div class="iconbox rounded-4">
                                 <i class="las la-laptop-code"></i>
                             </div>
-                            <h5 class="mt-4 mb-2">Buisness Consultant</h5>
-                            <p> Provides Strategies, insight and provides recommendations to help clients reach their
-                                goals and solve problems .</p>
+                            <h5 class="mt-4 mb-2">Business Consulting</h5>
+                            <p>Offering strategic insights and recommendations to help clients optimize their processes,
+                                achieve their goals, and overcome challenges.</p>
+                            <a href="#" class="link-custom"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Performance Optimization</h5>
+                            <p>Analyzing existing applications to identify bottlenecks and implementing improvements for
+                                faster load times and better user experience.</p>
+                            <a href="#" class="link-custom"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-cloud"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Cloud Solutions</h5>
+                            <p>Leveraging cloud technologies for application deployment, ensuring scalability and
+                                reliability for business operations.</p>
+                            <a href="#" class="link-custom"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-headset"></i>
+                            </div>
+                            <h5 class="mt-4 mb-2">Technical Support</h5>
+                            <p>Delivering technical assistance and troubleshooting to optimize application performance
+                                and enhance user satisfaction.</p>
+
                             <a href="#" class="link-custom"></a>
                         </div>
                     </div>
@@ -132,6 +224,7 @@
 
             </div>
         </section>
+
         <!-- SERVICES -->
 
         <!-- WORK -->
@@ -154,96 +247,224 @@
                             <div class="card-custom-content p-4">
                                 <h4>GIBLIB: The Netflix of Medical Education</h4>
                                 <p>
-                                    A streaming platform that provides medical education through video content, including surgical procedures, lectures, expert advice, and courses.<br>
+                                    A streaming platform that provides medical education through video content,
+                                    including surgical procedures, lectures, expert advice, and courses.<br>
                                     <strong>Role:</strong> Full Stack Developer<br>
-                                    <strong>Technologies:</strong> React, Express.js (TypeScript), AWS EC2, CloudFront, PostgreSQL, Stripe, Buddy pipelines (CI/CD)<br>
+                                    <strong>Technologies:</strong> React, Express.js (TypeScript), AWS EC2, CloudFront,
+                                    PostgreSQL, Stripe, Buddy pipelines (CI/CD)<br>
                                     <br>
                                     <strong>Contributions:</strong>
-                                    <ul>
-                                        <li>Managed frontend and backend development.</li>
-                                        <li>Set up cloud services for hosting and video streaming.</li>
-                                        <li>Integrated Stripe for subscription payments.</li>
-                                        <li>Maintained full project deployments and worked on infrastructure automation using Buddy pipelines.</li>
-                                    </ul>
+                                <ul>
+                                    <li>Managed frontend and backend development.</li>
+                                    <li>Set up cloud services for hosting and video streaming.</li>
+                                    <li>Integrated Stripe for subscription payments.</li>
+                                    <li>Maintained full project deployments and worked on infrastructure automation
+                                        using Buddy pipelines.</li>
+                                </ul>
                                 </p>
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-00-28.png" alt="">
+                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-00-28.png"
+                                    alt="">
                             </div>
                             <div class="card-custom-content p-4">
                                 <h4>StickerBook: Sustainability Education Platform</h4>
                                 <p>
-                                    A white-label platform providing companies and institutions with educational content on sustainability issues. The platform engages users through video content and interactive learning with stickers.<br>
-                                    <strong>Role:</strong> Backend Developer (LTI Compliance Specialist), Full Stack Developer<br>
+                                    A white-label platform providing companies and institutions with educational content
+                                    on sustainability issues. The platform engages users through video content and
+                                    interactive learning with stickers.<br>
+                                    <strong>Role:</strong> Backend Developer (LTI Compliance Specialist), Full Stack
+                                    Developer<br>
                                     <strong>Technologies:</strong> Django REST, Docker, PostgreSQL, React.js<br>
                                     <br>
                                     <strong>Contributions:</strong>
-                                    <ul>
-                                        <li>Implemented LTI (Learning Tools Interoperability) compliance for easy integration with other learning platforms.</li>
-                                        <li>Developed backend services using Django REST.</li>
-                                        <li>Contributed to frontend with React.js, improving user engagement.</li>
-                                        <li>Worked on database management using PostgreSQL and Docker for containerization.</li>
-                                    </ul>
+                                <ul>
+                                    <li>Implemented LTI (Learning Tools Interoperability) compliance for easy
+                                        integration with other learning platforms.</li>
+                                    <li>Developed backend services using Django REST.</li>
+                                    <li>Contributed to frontend with React.js, improving user engagement.</li>
+                                    <li>Worked on database management using PostgreSQL and Docker for containerization.
+                                    </li>
+                                </ul>
                                 </p>
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-08-09.png" alt="">
+                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-08-09.png"
+                                    alt="">
                             </div>
                             <div class="card-custom-content p-4">
                                 <h4>Bayth Capital: Ethical Real Estate Investment Platform</h4>
                                 <p>
-                                    A platform offering Shariah-compliant real estate investment and finance solutions, including Investment Accounts, Project Funding, and House Financing.<br>
+                                    A platform offering Shariah-compliant real estate investment and finance solutions,
+                                    including Investment Accounts, Project Funding, and House Financing.<br>
                                     <strong>Role:</strong> Full Stack Developer<br>
                                     <strong>Technologies:</strong> Django REST, React (TypeScript), PostgreSQL<br>
                                     <br>
                                     <strong>Contributions:</strong>
-                                    <ul>
-                                        <li>Worked in a code crunch environment to deliver the House Finance feature in just 6 days, a task estimated for 6 weeks.</li>
-                                        <li>Developed full-stack features, including backend REST APIs and frontend interfaces.</li>
-                                        <li>Contributed to the rapid development process with collaborative team efforts.</li>
-                                    </ul>
+                                <ul>
+                                    <li>Worked in a code crunch environment to deliver the House Finance feature in just
+                                        6 days, a task estimated for 6 weeks.</li>
+                                    <li>Developed full-stack features, including backend REST APIs and frontend
+                                        interfaces.</li>
+                                    <li>Contributed to the rapid development process with collaborative team efforts.
+                                    </li>
+                                </ul>
                                 </p>
                                 <a href="#" class="link-custom"></a>
                             </div>
                         </div>
                     </div>
-                
+
                     <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="card-custom rounded-4 bg-base shadow-effect">
                             <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-12-33.png" alt="">
+                                <img class="rounded-4" src="./assets/images/Screenshot from 2024-09-24 06-12-33.png"
+                                    alt="">
                             </div>
                             <div class="card-custom-content p-4">
                                 <h4>Moezza</h4>
                                 <p>
-                                    An AI chatbot for financial applications that can perform transaction requests and fetch details from resource servers.<br>
+                                    An AI chatbot for financial applications that can perform transaction requests and
+                                    fetch details from resource servers.<br>
                                     <strong>Role:</strong> Developer<br>
                                     <strong>Technologies:</strong> FastAPI, OpenAI, LangChain, Scikit-learn<br>
                                     <br>
                                     <strong>Contributions:</strong>
-                                    <ul>
-                                        <li>Developed the chatbot using FastAPI and integrated AI functionalities for transaction processing and information retrieval.</li>
-                                    </ul>
+                                <ul>
+                                    <li>Developed the chatbot using FastAPI and integrated AI functionalities for
+                                        transaction processing and information retrieval.</li>
+                                </ul>
                                 </p>
                             </div>
                         </div>
                     </div>
-                
+
                 </div>
-                
+
             </div>
         </section>
         <!-- //WORK -->
+
+        <section id="blog" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4" data-aos="fade-up">
+                    <div class="col-lg-8">
+                        <h6 class="text-brand">BLOG</h6>
+                        <h1>Understanding OpenFGA: A Simple Approach to Managing Access Control</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12" data-aos="fade-up">
+                        <p>
+                            In today's digital world, keeping your online information safe is more important than ever.
+                            One key part of this is ensuring that only the right people have access to certain
+                            information. This is known as access control, and it's something that businesses and
+                            organizations must manage carefully.
+                        </p>
+                        <h2>What is Google Zanzibar?</h2>
+                        <p>
+                            Google Zanzibar is a new way of thinking about access control, created by Google to help
+                            manage who can see and use their information. Traditional methods often rely on strict
+                            roles, like "admin" or "user," which can be too limiting. Zanzibar allows for more
+                            flexibility by considering various factors, like who the person is and what they are trying
+                            to do.
+                        </p>
+
+                        <h2>What is OpenFGA?</h2>
+                        <p>
+                            OpenFGA is a tool that takes the ideas from Zanzibar and makes them available for everyone
+                            to use. It helps developers create systems that control access to information in a simple
+                            yet effective way. With OpenFGA, businesses can define rules about who can do what with
+                            their data, making it easier to keep information secure.
+                        </p>
+
+                        <h2>How Does OpenFGA Work?</h2>
+                        <p>
+                            OpenFGA can be run on your computer using something called Docker, which is a way to set up
+                            software easily. You don't need to be a computer expert to use it. Here’s a simple way to
+                            get started:
+                        </p>
+                        <h3>Steps to Get OpenFGA Running</h3>
+                        <ol>
+                            <li>
+                                First, download Docker from its official website and install it on your computer.
+                            </li>
+                            <li>
+                                Open a terminal or command prompt and type the following command to download OpenFGA:
+                                <pre><code>docker pull openfga/openfga:latest</code></pre>
+                            </li>
+                            <li>
+                                Next, run the OpenFGA software by typing this command:
+                                <pre><code>docker run -p 8080:8080 openfga/openfga:latest</code></pre>
+                            </li>
+                            <li>
+                                Finally, open your web browser and go to <code>http://localhost:8080</code> to explore
+                                the OpenFGA interface. This is where you can create and test your access control rules.
+                            </li>
+                        </ol>
+
+                        <h2>Using OpenFGA with Node.js</h2>
+                        <p>
+                            For those interested in building their own applications, OpenFGA offers a way to connect
+                            with a programming language called Node.js. Here’s how to get started:
+                        </p>
+                        <h3>Getting Started with OpenFGA in Node.js</h3>
+                        <ol>
+                            <li>
+                                First, you need to add OpenFGA to your Node.js project. You can do this by running:
+                                <pre><code>npm install openfga</code></pre>
+                            </li>
+                            <li>
+                                Then, set up the connection to OpenFGA:
+                                <pre><code>const { OpenFga } = require("openfga");
+        const client = new OpenFga({ serverUrl: "http://localhost:8080", });</code></pre>
+                            </li>
+                            <li>
+                                Next, define the types of data you have and who can access them. For example, you can
+                                say that "Editors" can make changes to certain documents.
+                            </li>
+                            <li>
+                                Finally, you can check if a specific user has access to a document. This helps you
+                                ensure that your information is safe and only accessible to those who should see it.
+                            </li>
+                        </ol>
+
+                        <h2>Conclusion</h2>
+                        <p>
+                            OpenFGA, inspired by the ideas in Google Zanzibar, provides a fresh and flexible way to
+                            manage who has access to what information. Whether you’re a business owner wanting to
+                            protect your data or a developer looking to build secure applications, OpenFGA offers the
+                            tools you need to succeed.
+                        </p>
+                        <p>
+                            If you're interested in learning more about OpenFGA, visit the <a
+                                href="https://github.com/openfga/openfga">OpenFGA GitHub repository</a>. It's a great
+                            place to find more resources and join a community of users dedicated to better access
+                            control solutions.
+                        </p>
+
+                        <hr class="my-4">
+                        <h3>Stay Tuned for More!</h3>
+                        <p>I post new blogs every month, so be sure to check back regularly for updates.</p>
+                        <p>In my next blog, I'll explore more exciting topics that can help you in your journey.</p>
+                        <p>---</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- ABOUT -->
         <section id="about" class="full-height px-lg-5">
@@ -261,6 +482,16 @@
 
                         <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
                         <div class="row gy-4">
+                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
+
+                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                <h4 class="fw-bold mb-3">Master of Computer Applications (MCA)</h4>
+                                <p class="text-brand mb-1">
+                                    Currently pursuing at Indira Gandhi National Open University (IGNOU).
+                                </p>
+                            </div>
+                            </div>
+                            
 
                             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
@@ -302,6 +533,7 @@
                             <div class="col-12" data-aos="fade-up" data-aos-delay="600">
                                 <div class="bg-base p-4 rounded-4 shadow-effect">
                                     <h4>S.Secondary-Computer Science</h4>
+
                                     <p class="text-brand mb-2">National institute of Open Schooling (2017 - 2019)</p>
                                     <p class="mb-0"></p>
                                 </div>
@@ -397,39 +629,63 @@
         <!-- CONTACT -->
         <section id="contact" class="full-height px-lg-5">
             <div class="container">
-
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-8 pb-4" data-aos="fade-up">
                         <h6 class="text-brand">CONTACT</h6>
-                        <h1>Interested in working together? Let's talk
-                        </h1>
+                        <h1>Interested in working together? Let's talk</h1>
                     </div>
 
                     <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
-                        <form action="#" class="row g-lg-3 gy-3">
+                        <form id="contact-form" class="row g-lg-3 gy-3">
                             <div class="form-group col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter your name">
+                                <input type="text" class="form-control" name="entry.1832245863"
+                                    placeholder="Enter your name" required>
                             </div>
                             <div class="form-group col-md-6">
-                                <input type="email" class="form-control" placeholder="Enter your email">
+                                <input type="email" class="form-control" name="entry.1710697318"
+                                    placeholder="Enter your email" required>
                             </div>
                             <div class="form-group col-12">
-                                <input type="text" class="form-control" placeholder="Enter subject">
+                                <input type="text" class="form-control" name="entry.901236662"
+                                    placeholder="Enter subject" required>
                             </div>
                             <div class="form-group col-12">
-                                <textarea name="" rows="4" class="form-control"
-                                    placeholder="Enter your message"></textarea>
+                                <textarea rows="4" class="form-control" name="entry.330005593"
+                                    placeholder="Enter your message" required></textarea>
                             </div>
                             <div class="form-group col-12 d-grid">
                                 <button type="submit" class="btn btn-brand">Contact me</button>
                             </div>
+                            <div id="form-message" style="display:none;">Your message has been sent!</div>
                         </form>
                     </div>
                 </div>
-
-
             </div>
         </section>
+
+        <script>
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                const form = event.target;
+                const formData = new FormData(form);
+
+                // Send the form data using fetch
+                fetch("https://docs.google.com/forms/d/e/1FAIpQLSeWNH25YYpBarc09UyAtljdq39bgyuHN01PG-907DeNybQGdA/formResponse", {
+                    method: "POST",
+                    body: formData,
+                    mode: "no-cors" // 'no-cors' to prevent CORS issues
+                }).then(() => {
+                    // Show success message and hide form
+                    document.getElementById("form-message").style.display = "block";
+                    form.reset(); // Clear the form
+                }).catch(error => {
+                    console.error("Error submitting the form:", error);
+                });
+            });
+        </script>
+
+
         <!-- //CONTACT -->
 
         <!-- FOOTER -->
@@ -437,7 +693,14 @@
             <div class="container">
                 <div class="row gy-4 justify-content-between">
                     <div class="col-auto">
-                        <p class="mb-0"> <a href="#" class="fw-bold"> Email : Sulaimsaed@gmail.com</a></p>
+                        <p class="mb-0"> <a href="#" class="fw-bold"> Email : Sulaimsaed@gmail.com</a>
+                        </p>
+                        <p class="mb-0">
+
+                            <a href="#" class="link-custom">Call: (+91) 8590046766</a><br>
+                        </p>
+
+
                     </div>
                     <div class="col-auto">
                         <div class="social-icons">
@@ -454,7 +717,6 @@
 
     </div>
     <!-- //CONTENT WRAPPER -->
-
 
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
